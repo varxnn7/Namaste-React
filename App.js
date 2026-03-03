@@ -21,9 +21,9 @@ const parent = React.createElement(
         React.createElement("h1", {}, "I am an H1 tag"),
         React.createElement("h2", {}, "I am an H2 tag"),
     ]),
-  
-    ]); 
+
+    ]);
 console.log(parent); // object 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+root.render(parent); // it will replace the content of the root element in index.html  
