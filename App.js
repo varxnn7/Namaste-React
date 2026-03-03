@@ -1,29 +1,20 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-/* <div id= "parent">
-    <div id="child">
-        <h1>I am an H1 tag</h1>
-    </div>
-</div>
-<div id="child">
-     <h1> I'am h1 tag</h1>
-     <h2> I'am h2 tag</h2>
-</div>
+// React.createElement => Object => HTMLElement(rendor)
+const heading = React.createElement("h1", { id: "heading" }, "Namaste React");
+console.log(heading);
 
-ReactElement(Object) => HTML(Browser Ubderstand)
- */
-const parent = React.createElement(
-    "div",
-    { id: "parent" },
-    [React.createElement("div", { id: "child" }, [
-        React.createElement("h1", {}, "I am an H1 tag"),
-        React.createElement("h2", {}, "I am an H2 tag"),
-    ]), React.createElement("div", { id: "child2" }, [
-        React.createElement("h1", {}, "I am an H1 tag"),
-        React.createElement("h2", {}, "I am an H2 tag"),
-    ]),
 
-    ]);
-console.log(parent); // object 
+// JSX (transpiled before it reaches Js Engine) - Parcel - Babel
+
+// JSX => React.createElement => ReactElement-JS Object => HTMLElement(rendor)
+
+const jsxHeading = (<h1 className='head'>
+    Namaste React using JSX
+</h1>)
+console.log(jsxHeading);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent); // it will replace the content of the root element in index.html  
+
+root.render(jsxHeading);
