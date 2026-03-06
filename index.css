@@ -49,3 +49,12 @@
     height: 150px; /* You can adjust this value */
     object-fit: cover;
 }
+
+.filter-btn {
+    margin: 10px;
+    cursor: pointer;
+    
+    
+    
+
+}
