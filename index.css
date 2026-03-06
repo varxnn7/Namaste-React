@@ -44,7 +44,8 @@
     padding: 10px;
 }
 
-.res-logo {
+.res-card img {
     width: 100%;
-    /* margin: 5px; */
+    height: 150px; /* You can adjust this value */
+    object-fit: cover;
 }
