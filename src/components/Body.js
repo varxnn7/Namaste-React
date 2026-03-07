@@ -4,18 +4,14 @@ import { useState, useEffect} from "react";
 import Shimmer from "./Shimmer";
 
 const Body = () => {
-  // local state varaiable - super powerful variable
   const restaurants =
     resList.data.data.cards[1].card.card.gridElements.infoWithStyle.restaurants;
   const [ListOfRestaurants, setListOfRestaurants] = useState([]);
 
- // this is been called after the component is rendered on the screen
   useEffect(() => {
-    // console.log("called");
     fetchData();
   }, []);
-  // this will be called first 
-  // console.log("Body rendered");
+
 
 const fetchData = async () => {
   const data = await fetch(
@@ -26,12 +22,12 @@ const fetchData = async () => {
   // optional chaining
   setListOfRestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
 };
-
-if(ListOfRestaurants.length === 0){
-  return <Shimmer />;
-}
+// conditional rendering
+// if(ListOfRestaurants.length === 0){
+//   return <Shimmer />;
+// }
  
-  return (
+  return ListOfRestaurants.length === 0 ? <Shimmer /> :(
     <div className="body">
       <div className= "filter">
         <button 
