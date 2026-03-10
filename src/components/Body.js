@@ -2,6 +2,7 @@ import RestaurantCard from "./RestaurantCard";
 import resList from "../utils/mockData";
 import { useState, useEffect} from "react";
 import Shimmer from "./Shimmer";
+import {Link} from "react-router-dom";
 
 const Body = () => {
   const restaurants =
@@ -21,13 +22,19 @@ const Body = () => {
 
 const fetchData = async () => {
   const data = await fetch(
-  "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.190473&lng=79.926989&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-);
+    "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.190473&lng=79.926989&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+  );
+
   const json = await data.json();
   console.log(json);
-  // optional chaining
-  setListOfRestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-  setFilteredRestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+
+  const restaurants =
+    json?.data?.cards
+      ?.find((card) => card?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+      ?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+
+  setListOfRestaurants(restaurants);
+  setFilteredRestaurants(restaurants);
 };
 // conditional rendering
 // if(ListOfRestaurants.length === 0){
@@ -58,7 +65,7 @@ const fetchData = async () => {
             const filteredList = ListOfRestaurants.filter(
               (res) => res.info.avgRating > 4.4
             );
-            setListOfRestaurants(filteredList);
+            setFilteredRestaurants(filteredList);
           }}
         >
           Top Rated Restaurants
@@ -67,10 +74,14 @@ const fetchData = async () => {
       </div>
       <div className="res-container">
         {filteredRestaurants.map((restaurant) => (
-          <RestaurantCard
-            key={restaurant.info.id}
-            resData={restaurant}
-          />
+          <Link 
+          key= {restaurant.info.id}
+          to={"/restaurants/" + restaurant.info.id}
+        >           
+        <RestaurantCard
+              resData={restaurant}
+            />
+          </Link>
         ))}
       </div>
     </div>
