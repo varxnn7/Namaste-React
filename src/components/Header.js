@@ -19,7 +19,7 @@ const Header = () => {
 
       <div className="nav-items">
         <ul>
-          <li> Online Status: {onlineStatus ? "Y" : "N"}</li>
+          <li> Online Status: {onlineStatus ? "✅" : "🔴"}</li>
           {/* do not use achort tag for navigation use Link from react-router-dom */}
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
