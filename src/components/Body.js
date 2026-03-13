@@ -5,8 +5,6 @@ import Shimmer from "./Shimmer";
 import {Link} from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 const Body = () => {
-  const restaurants =
-    resList.data.data.cards[1].card.card.gridElements.infoWithStyle.restaurants;
   const [ListOfRestaurants, setListOfRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
 
@@ -14,28 +12,25 @@ const Body = () => {
   const [searchText, setSearchText] = useState("");
 
   // whenever the state variable is updated, react triggers a reconciliation cycle(re-renders the component)
-
+  console.log("Body rendered", ListOfRestaurants);
   useEffect(() => {
     fetchData();
   }, []);
 
 
-const fetchData = async () => {
-  const data = await fetch(
-    "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.190473&lng=79.926989&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-  );
+const fetchData = () => {
+    const restaurants =
+      resList?.data?.cards
+        ?.filter(
+          (card) =>
+            card?.card?.card["@type"] ===
+            "type.googleapis.com/swiggy.presentation.food.v2.Restaurant"
+        )
+        .map((card) => card.card.card);
 
-  const json = await data.json();
-  console.log(json);
-
-  const restaurants =
-    json?.data?.cards
-      ?.find((card) => card?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-      ?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
-
-  setListOfRestaurants(restaurants);
-  setFilteredRestaurants(restaurants);
-};
+    setListOfRestaurants(restaurants);
+    setFilteredRestaurants(restaurants);
+  };
 // conditional rendering
 // if(ListOfRestaurants.length === 0){
 //   return <Shimmer />;
@@ -78,7 +73,7 @@ if(onlineStatus===false) return <h1> Looks like you are offline </h1>
         </div>
        
       </div>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap w-full min-w-full">
         {filteredRestaurants.map((restaurant) => (
           <Link 
           key= {restaurant.info.id}
