@@ -1,4 +1,4 @@
 /node_modules
 /dist
 .parcel-cache
-/backend/node_modules
+/backend/node_modulesJ
