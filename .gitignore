@@ -2,7 +2,11 @@
 /dist
 .parcel-cache
 <<<<<<< HEAD
+<<<<<<< HEAD
 /backend/node_modulesJ
 =======
 /backend/node_modules
 >>>>>>> varun
+=======
+/backend/node_modulesJ
+>>>>>>> 7b60de5a14b33fd4425fb6e4bd19385848b6f50f
