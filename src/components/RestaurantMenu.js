@@ -2,6 +2,8 @@ import useRestaurantMenu from "../utils/useRestaurantMenu";
 import Shimmer from "./Shimmer";
 import { useParams, Link } from "react-router-dom";
 import { CDN_URL } from "../utils/constant";
+import { useDispatch } from "react-redux";
+import { addItem } from "../utils/cartSlice";
 
 const VegBadge = ({ isVeg }) => (
   <span
@@ -25,7 +27,14 @@ const StarIcon = () => (
   </svg>
 );
 
-const MenuItemCard = ({ item }) => (
+const MenuItemCard = ({ item }) => {
+  const dispatch = useDispatch();
+
+  const handleAddItem = () => {
+    dispatch(addItem(item));
+  };
+
+  return (
   <div className="flex justify-between items-start py-5 border-b border-gray-100 last:border-0 group">
     <div className="flex-1 pr-6">
       <div className="flex items-center gap-2 mb-1">
@@ -51,11 +60,15 @@ const MenuItemCard = ({ item }) => (
         </p>
       )}
     </div>
-    <button className="flex-shrink-0 mt-1 px-5 py-2 bg-white border border-orange-400 text-orange-500 text-sm font-bold rounded-lg shadow-sm hover:bg-orange-500 hover:text-white transition-all duration-200 active:scale-95">
+    <button 
+      className="flex-shrink-0 mt-1 px-5 py-2 bg-white border border-orange-400 text-orange-500 text-sm font-bold rounded-lg shadow-sm hover:bg-orange-500 hover:text-white transition-all duration-200 active:scale-95"
+      onClick={handleAddItem}
+    >
       ADD
     </button>
   </div>
-);
+  );
+};
 
 const CategorySection = ({ category }) => (
   <div className="mb-2">

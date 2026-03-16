@@ -1383,6 +1383,213 @@
 },
 "relevance": { "type": "RELEVANCE_TYPE_ON_MENU_RETURN", "sectionId": "MENU_RETURN_FOOD" }
 }
+},
+{
+  "card": {
+    "card": {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "RES108",
+        "name": "Spice Route Kitchen",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/10/30/3e57dec6-32f7-43b9-9276-54bcafe35fe9_633759.JPG",
+        "locality": "Wright Town",
+        "areaName": "Wright Town",
+        "costForTwo": "₹350 for two",
+        "cuisines": ["North Indian", "Punjabi", "Tandoor", "Dal Makhani"],
+        "avgRating": 4.4,
+        "parentId": "999008",
+        "avgRatingString": "4.4",
+        "totalRatingsString": "1.5K+",
+        "sla": { "deliveryTime": 30, "lastMileTravel": 3.8, "serviceability": "SERVICEABLE", "slaString": "25-35 mins", "lastMileTravelString": "3.8 km", "iconType": "ICON_TYPE_EMPTY" },
+        "availability": { "nextCloseTime": "2026-03-13 23:00:00", "opened": true },
+        "badges": {}, "isOpen": true, "type": "F",
+        "badgesV2": { "entityBadges": { "imageBased": {}, "textExtendedBadges": {}, "textBased": {} } },
+        "aggregatedDiscountInfoV3": { "header": "20% OFF", "subHeader": "UPTO ₹60", "logoCtx": { "text": "BENEFITS" } },
+        "loyaltyDiscoverPresentationInfo": { "logoCtx": { "text": "BENEFITS", "logo": "v1634558776/swiggy_one/OneLogo_3x.png" }, "freedelMessage": "FREE DELIVERY" },
+        "orderabilityCommunication": { "title": {}, "subTitle": {}, "message": {}, "customIcon": {}, "commsStyling": {} },
+        "differentiatedUi": { "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT", "differentiatedUiMediaDetails": { "mediaType": "ADS_MEDIA_ENUM_IMAGE", "lottie": {}, "video": {} } },
+        "reviewsSummary": {}, "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT", "restaurantOfferPresentationInfo": {},
+        "externalRatings": { "aggregatedRating": { "rating": "--" } }, "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+      },
+      "analytics": {},
+      "cta": { "link": "swiggy://menu?restaurant_id=RES108", "text": "RESTAURANT_MENU", "type": "DEEPLINK" },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+    },
+    "relevance": { "type": "RELEVANCE_TYPE_ON_MENU_RETURN", "sectionId": "MENU_RETURN_FOOD" }
+  }
+},
+{
+  "card": {
+    "card": {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "RES109",
+        "name": "The Ice Cream Lab",
+        "cloudinaryImageId": "1a8dfa8b2a73ddf7c6193465ab24c898",
+        "locality": "Sadar",
+        "areaName": "Sadar",
+        "costForTwo": "₹200 for two",
+        "cuisines": ["Ice Cream", "Desserts", "Milkshakes", "Waffles", "Sundaes"],
+        "avgRating": 4.8,
+        "veg": true,
+        "parentId": "999009",
+        "avgRatingString": "4.8",
+        "totalRatingsString": "6.2K+",
+        "sla": { "deliveryTime": 22, "lastMileTravel": 2.9, "serviceability": "SERVICEABLE", "slaString": "20-25 mins", "lastMileTravelString": "2.9 km", "iconType": "ICON_TYPE_EMPTY" },
+        "availability": { "nextCloseTime": "2026-03-13 23:30:00", "opened": true },
+        "badges": {}, "isOpen": true, "type": "F",
+        "badgesV2": { "entityBadges": { "imageBased": {}, "textExtendedBadges": {}, "textBased": {} } },
+        "aggregatedDiscountInfoV3": { "header": "₹50 OFF", "subHeader": "ABOVE ₹149", "logoCtx": { "text": "BENEFITS" } },
+        "loyaltyDiscoverPresentationInfo": { "logoCtx": { "text": "BENEFITS", "logo": "v1634558776/swiggy_one/OneLogo_3x.png" }, "freedelMessage": "FREE DELIVERY" },
+        "orderabilityCommunication": { "title": {}, "subTitle": {}, "message": {}, "customIcon": {}, "commsStyling": {} },
+        "differentiatedUi": { "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT", "differentiatedUiMediaDetails": { "mediaType": "ADS_MEDIA_ENUM_IMAGE", "lottie": {}, "video": {} } },
+        "reviewsSummary": {}, "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT", "restaurantOfferPresentationInfo": {},
+        "externalRatings": { "aggregatedRating": { "rating": "--" } }, "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+      },
+      "analytics": {},
+      "cta": { "link": "swiggy://menu?restaurant_id=RES109", "text": "RESTAURANT_MENU", "type": "DEEPLINK" },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+    },
+    "relevance": { "type": "RELEVANCE_TYPE_ON_MENU_RETURN", "sectionId": "MENU_RETURN_FOOD" }
+  }
+},
+{
+  "card": {
+    "card": {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "RES110",
+        "name": "Taco Fiesta",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/7/10/e25d89f0-a372-462f-b2fe-dd864b0b60b4_512529.JPG",
+        "locality": "Tilhari",
+        "areaName": "Tilhari",
+        "costForTwo": "₹300 for two",
+        "cuisines": ["Mexican", "Tex-Mex", "Nachos", "Burritos", "Quesadillas"],
+        "avgRating": 4.2,
+        "parentId": "999010",
+        "avgRatingString": "4.2",
+        "totalRatingsString": "780+",
+        "sla": { "deliveryTime": 38, "lastMileTravel": 5.0, "serviceability": "SERVICEABLE", "slaString": "35-40 mins", "lastMileTravelString": "5.0 km", "iconType": "ICON_TYPE_EMPTY" },
+        "availability": { "nextCloseTime": "2026-03-13 23:00:00", "opened": true },
+        "badges": {}, "isOpen": true, "type": "F",
+        "badgesV2": { "entityBadges": { "imageBased": {}, "textExtendedBadges": {}, "textBased": {} } },
+        "aggregatedDiscountInfoV3": { "header": "30% OFF", "subHeader": "UPTO ₹75", "logoCtx": { "text": "BENEFITS" } },
+        "loyaltyDiscoverPresentationInfo": { "logoCtx": { "text": "BENEFITS", "logo": "v1634558776/swiggy_one/OneLogo_3x.png" }, "freedelMessage": "FREE DELIVERY" },
+        "orderabilityCommunication": { "title": {}, "subTitle": {}, "message": {}, "customIcon": {}, "commsStyling": {} },
+        "differentiatedUi": { "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT", "differentiatedUiMediaDetails": { "mediaType": "ADS_MEDIA_ENUM_IMAGE", "lottie": {}, "video": {} } },
+        "reviewsSummary": {}, "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT", "restaurantOfferPresentationInfo": {},
+        "externalRatings": { "aggregatedRating": { "rating": "--" } }, "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+      },
+      "analytics": {},
+      "cta": { "link": "swiggy://menu?restaurant_id=RES110", "text": "RESTAURANT_MENU", "type": "DEEPLINK" },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+    },
+    "relevance": { "type": "RELEVANCE_TYPE_ON_MENU_RETURN", "sectionId": "MENU_RETURN_FOOD" }
+  }
+},
+{
+  "card": {
+    "card": {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "RES111",
+        "name": "The Health Bowl",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/12/12/3d295841-f807-487f-b62a-8bd99d127fc8_1053968.JPG",
+        "locality": "Civil Lines",
+        "areaName": "Civil Lines",
+        "costForTwo": "₹400 for two",
+        "cuisines": ["Healthy", "Salads", "Smoothie Bowls", "Protein", "Vegan"],
+        "avgRating": 4.6,
+        "veg": true,
+        "parentId": "999011",
+        "avgRatingString": "4.6",
+        "totalRatingsString": "3.4K+",
+        "sla": { "deliveryTime": 28, "lastMileTravel": 3.3, "serviceability": "SERVICEABLE", "slaString": "25-30 mins", "lastMileTravelString": "3.3 km", "iconType": "ICON_TYPE_EMPTY" },
+        "availability": { "nextCloseTime": "2026-03-13 21:00:00", "opened": true },
+        "badges": {}, "isOpen": true, "type": "F",
+        "badgesV2": { "entityBadges": { "imageBased": {}, "textExtendedBadges": {}, "textBased": {} } },
+        "aggregatedDiscountInfoV3": { "header": "ITEMS", "subHeader": "AT ₹79", "logoCtx": { "text": "BENEFITS" } },
+        "loyaltyDiscoverPresentationInfo": { "logoCtx": { "text": "BENEFITS", "logo": "v1634558776/swiggy_one/OneLogo_3x.png" }, "freedelMessage": "FREE DELIVERY" },
+        "orderabilityCommunication": { "title": {}, "subTitle": {}, "message": {}, "customIcon": {}, "commsStyling": {} },
+        "differentiatedUi": { "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT", "differentiatedUiMediaDetails": { "mediaType": "ADS_MEDIA_ENUM_IMAGE", "lottie": {}, "video": {} } },
+        "reviewsSummary": {}, "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT", "restaurantOfferPresentationInfo": {},
+        "externalRatings": { "aggregatedRating": { "rating": "--" } }, "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+      },
+      "analytics": {},
+      "cta": { "link": "swiggy://menu?restaurant_id=RES111", "text": "RESTAURANT_MENU", "type": "DEEPLINK" },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+    },
+    "relevance": { "type": "RELEVANCE_TYPE_ON_MENU_RETURN", "sectionId": "MENU_RETURN_FOOD" }
+  }
+},
+{
+  "card": {
+    "card": {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "RES112",
+        "name": "BBQ Nation Express",
+        "cloudinaryImageId": "1154cffac2453eb0bf7fdda7e5ea1659",
+        "locality": "Gorakhpur",
+        "areaName": "Gorakhpur",
+        "costForTwo": "₹700 for two",
+        "cuisines": ["Barbecue", "Grills", "North Indian", "Kebabs", "Starters"],
+        "avgRating": 4.8,
+        "parentId": "999012",
+        "avgRatingString": "4.8",
+        "totalRatingsString": "8.9K+",
+        "sla": { "deliveryTime": 50, "lastMileTravel": 7.1, "serviceability": "SERVICEABLE", "slaString": "45-55 mins", "lastMileTravelString": "7.1 km", "iconType": "ICON_TYPE_EMPTY" },
+        "availability": { "nextCloseTime": "2026-03-13 23:59:00", "opened": true },
+        "badges": {}, "isOpen": true, "type": "F",
+        "badgesV2": { "entityBadges": { "imageBased": {}, "textExtendedBadges": {}, "textBased": {} } },
+        "aggregatedDiscountInfoV3": { "header": "ITEMS", "subHeader": "AT ₹149", "logoCtx": { "text": "BENEFITS" } },
+        "loyaltyDiscoverPresentationInfo": { "logoCtx": { "text": "BENEFITS", "logo": "v1634558776/swiggy_one/OneLogo_3x.png" }, "freedelMessage": "FREE DELIVERY" },
+        "orderabilityCommunication": { "title": {}, "subTitle": {}, "message": {}, "customIcon": {}, "commsStyling": {} },
+        "differentiatedUi": { "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT", "differentiatedUiMediaDetails": { "mediaType": "ADS_MEDIA_ENUM_IMAGE", "lottie": {}, "video": {} } },
+        "reviewsSummary": {}, "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT", "restaurantOfferPresentationInfo": {},
+        "externalRatings": { "aggregatedRating": { "rating": "--" } }, "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+      },
+      "analytics": {},
+      "cta": { "link": "swiggy://menu?restaurant_id=RES112", "text": "RESTAURANT_MENU", "type": "DEEPLINK" },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+    },
+    "relevance": { "type": "RELEVANCE_TYPE_ON_MENU_RETURN", "sectionId": "MENU_RETURN_FOOD" }
+  }
+},
+{
+  "card": {
+    "card": {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "RES113",
+        "name": "Paneer Palace",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2026/3/6/18a96461-eb80-4571-965f-68204437013f_622716.JPG",
+        "locality": "Napier Town",
+        "areaName": "Napier Town",
+        "costForTwo": "₹300 for two",
+        "cuisines": ["Paneer", "North Indian", "Veg", "Curry", "Roti"],
+        "avgRating": 4.3,
+        "veg": true,
+        "parentId": "999013",
+        "avgRatingString": "4.3",
+        "totalRatingsString": "1.1K+",
+        "sla": { "deliveryTime": 33, "lastMileTravel": 4.4, "serviceability": "SERVICEABLE", "slaString": "30-35 mins", "lastMileTravelString": "4.4 km", "iconType": "ICON_TYPE_EMPTY" },
+        "availability": { "nextCloseTime": "2026-03-13 23:00:00", "opened": true },
+        "badges": {}, "isOpen": true, "type": "F",
+        "badgesV2": { "entityBadges": { "imageBased": {}, "textExtendedBadges": {}, "textBased": {} } },
+        "aggregatedDiscountInfoV3": { "header": "25% OFF", "subHeader": "UPTO ₹50", "logoCtx": { "text": "BENEFITS" } },
+        "loyaltyDiscoverPresentationInfo": { "logoCtx": { "text": "BENEFITS", "logo": "v1634558776/swiggy_one/OneLogo_3x.png" }, "freedelMessage": "FREE DELIVERY" },
+        "orderabilityCommunication": { "title": {}, "subTitle": {}, "message": {}, "customIcon": {}, "commsStyling": {} },
+        "differentiatedUi": { "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT", "differentiatedUiMediaDetails": { "mediaType": "ADS_MEDIA_ENUM_IMAGE", "lottie": {}, "video": {} } },
+        "reviewsSummary": {}, "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT", "restaurantOfferPresentationInfo": {},
+        "externalRatings": { "aggregatedRating": { "rating": "--" } }, "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+      },
+      "analytics": {},
+      "cta": { "link": "swiggy://menu?restaurant_id=RES113", "text": "RESTAURANT_MENU", "type": "DEEPLINK" },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+    },
+    "relevance": { "type": "RELEVANCE_TYPE_ON_MENU_RETURN", "sectionId": "MENU_RETURN_FOOD" }
+  }
 }
 ],
 "firstOffsetRequest": true,

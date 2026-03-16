@@ -570,6 +570,207 @@ const menuData = {
       },
     ],
   },
+  
+  // Spice Route Kitchen
+  "RES108": {
+    name: "Spice Route Kitchen",
+    cuisines: ["North Indian", "Punjabi", "Tandoor", "Dal Makhani"],
+    costForTwo: "₹350 for two",
+    avgRating: "4.4",
+    deliveryTime: "25-35 mins",
+    cloudinaryImageId: "RX_THUMBNAIL/IMAGES/VENDOR/2025/10/30/3e57dec6-32f7-43b9-9276-54bcafe35fe9_633759.JPG",
+    categories: [
+      {
+        title: "Tandoori Starters",
+        items: [
+          { id: "1", name: "Paneer Tikka", price: 249, description: "Classic tandoori marinated cottage cheese", isVeg: true, rating: 4.5 },
+          { id: "2", name: "Tandoori Soya Chaap", price: 219, description: "Smoky and spicy soya chunks roasted in tandoor", isVeg: true, rating: 4.4 },
+        ],
+      },
+      {
+        title: "Main Course",
+        items: [
+          { id: "3", name: "Dal Makhani", price: 229, description: "Slow cooked black lentils with butter and cream", isVeg: true, rating: 4.7 },
+          { id: "4", name: "Kadhai Paneer", price: 269, description: "Cottage cheese cooked in spicy masala with bell peppers", isVeg: true, rating: 4.5 },
+          { id: "5", name: "Butter Chicken", price: 299, description: "Tender chicken cooked in rich tomato gravy", isVeg: false, rating: 4.6 },
+        ],
+      },
+      {
+        title: "Breads",
+        items: [
+          { id: "6", name: "Garlic Naan", price: 59, description: "Soft tandoori bread topped with garlic and butter", isVeg: true, rating: 4.6 },
+          { id: "7", name: "Lachha Paratha", price: 49, description: "Layered whole wheat unleavened bread", isVeg: true, rating: 4.5 },
+        ],
+      },
+    ],
+  },
+
+  // The Ice Cream Lab
+  "RES109": {
+    name: "The Ice Cream Lab",
+    cuisines: ["Ice Cream", "Desserts", "Milkshakes", "Waffles", "Sundaes"],
+    costForTwo: "₹200 for two",
+    avgRating: "4.8",
+    deliveryTime: "20-25 mins",
+    cloudinaryImageId: "1a8dfa8b2a73ddf7c6193465ab24c898",
+    categories: [
+      {
+        title: "Signature Ice Creams",
+        items: [
+          { id: "1", name: "Belgian Dark Chocolate", price: 129, description: "Rich and dense dark chocolate ice cream", isVeg: true, rating: 4.8 },
+          { id: "2", name: "Salted Caramel Vanilla", price: 119, description: "Classic vanilla swirled with salted caramel", isVeg: true, rating: 4.7 },
+        ],
+      },
+      {
+        title: "Sundaes & Waffles",
+        items: [
+          { id: "3", name: "Death By Chocolate Sundae", price: 249, description: "Chocolate ice cream with brownie chunks and hot fudge", isVeg: true, rating: 4.9 },
+          { id: "4", name: "Nutella Waffle", price: 199, description: "Fresh Baked Belgian Waffle smothered in Nutella", isVeg: true, rating: 4.7 },
+        ],
+      },
+      {
+        title: "Milkshakes",
+        items: [
+          { id: "5", name: "Oreo Overload Shake", price: 169, description: "Thick shake loaded with crushed Oreos", isVeg: true, rating: 4.6 },
+          { id: "6", name: "Strawberry Swirl Shake", price: 149, description: "Creamy shake made with real strawberries", isVeg: true, rating: 4.5 },
+        ],
+      },
+    ],
+  },
+
+  // Taco Fiesta
+  "RES110": {
+    name: "Taco Fiesta",
+    cuisines: ["Mexican", "Tex-Mex", "Nachos", "Burritos", "Quesadillas"],
+    costForTwo: "₹300 for two",
+    avgRating: "4.2",
+    deliveryTime: "35-40 mins",
+    cloudinaryImageId: "RX_THUMBNAIL/IMAGES/VENDOR/2025/7/10/e25d89f0-a372-462f-b2fe-dd864b0b60b4_512529.JPG",
+    categories: [
+      {
+        title: "Tacos",
+        items: [
+          { id: "1", name: "Spicy Chicken Tacos (2 pcs)", price: 189, description: "Crispy shells filled with spicy grilled chicken and salsa", isVeg: false, rating: 4.3 },
+          { id: "2", name: "Veggie Fajita Tacos (2 pcs)", price: 169, description: "Soft tortillas with grilled bell peppers and black beans", isVeg: true, rating: 4.1 },
+        ],
+      },
+      {
+        title: "Burritos & Bowls",
+        items: [
+          { id: "3", name: "Classic Beef Burrito", price: 249, description: "Large tortilla stuffed with beef, rice, beans and cheese", isVeg: false, rating: 4.4 },
+          { id: "4", name: "Mexican Veg Bowl", price: 219, description: "Rice bowl topped with corn salsa, beans, guacamole and sour cream", isVeg: true, rating: 4.2 },
+        ],
+      },
+      {
+        title: "Nachos & Sides",
+        items: [
+          { id: "5", name: "Loaded Cheese Nachos", price: 199, description: "Crispy tortilla chips drowned in melted cheese and jalapenos", isVeg: true, rating: 4.5 },
+          { id: "6", name: "Churros with Chocolate Sauce", price: 149, description: "Crispy fried dough dusted with cinnamon sugar", isVeg: true, rating: 4.6 },
+        ],
+      },
+    ],
+  },
+
+  // The Health Bowl
+  "RES111": {
+    name: "The Health Bowl",
+    cuisines: ["Healthy", "Salads", "Smoothie Bowls", "Protein", "Vegan"],
+    costForTwo: "₹400 for two",
+    avgRating: "4.6",
+    deliveryTime: "25-30 mins",
+    cloudinaryImageId: "RX_THUMBNAIL/IMAGES/VENDOR/2025/12/12/3d295841-f807-487f-b62a-8bd99d127fc8_1053968.JPG",
+    categories: [
+      {
+        title: "Salads & Bowls",
+        items: [
+          { id: "1", name: "Quinoa Superfood Salad", price: 249, description: "Mixed greens with quinoa, avocado, seeds and lemon vinaigrette", isVeg: true, rating: 4.7 },
+          { id: "2", name: "Mediterranean Chicken Bowl", price: 289, description: "Grilled chicken with hummus, olives, feta and brown rice", isVeg: false, rating: 4.6 },
+        ],
+      },
+      {
+        title: "Smoothie Bowls",
+        items: [
+          { id: "3", name: "Acai Berry Bowl", price: 299, description: "Acai smoothie topped with fresh berries, banana and granola", isVeg: true, rating: 4.8 },
+          { id: "4", name: "Tropical Mango Bowl", price: 259, description: "Mango and coconut base topped with kiwi and chia seeds", isVeg: true, rating: 4.5 },
+        ],
+      },
+      {
+        title: "Healthy Drinks",
+        items: [
+          { id: "5", name: "Green Detox Juice", price: 149, description: "Cold-pressed spinach, celery, apple and ginger", isVeg: true, rating: 4.6 },
+          { id: "6", name: "Kombucha (Wild Berry)", price: 129, description: "Probiotic fermented tea", isVeg: true, rating: 4.4 },
+        ],
+      },
+    ],
+  },
+
+  // BBQ Nation Express
+  "RES112": {
+    name: "BBQ Nation Express",
+    cuisines: ["Barbecue", "Grills", "North Indian", "Kebabs", "Starters"],
+    costForTwo: "₹700 for two",
+    avgRating: "4.8",
+    deliveryTime: "45-55 mins",
+    cloudinaryImageId: "1154cffac2453eb0bf7fdda7e5ea1659",
+    categories: [
+      {
+        title: "Signature Grills",
+        items: [
+          { id: "1", name: "Chicken Tikka Skewers (6 pcs)", price: 349, description: "Juicy marinated chicken cooked over charcoal", isVeg: false, rating: 4.8 },
+          { id: "2", name: "Mutton Seekh Kebab (4 pcs)", price: 399, description: "Spiced minced lamb grilled to perfection", isVeg: false, rating: 4.7 },
+        ],
+      },
+      {
+        title: "Veg Starters",
+        items: [
+          { id: "3", name: "Cajun Spiced Potatoes", price: 229, description: "Baby potatoes tossed in creamy cajun mayo", isVeg: true, rating: 4.9 },
+          { id: "4", name: "Grilled Pineapple", price: 199, description: "Sweet and spicy caramelised pineapple slices", isVeg: true, rating: 4.6 },
+        ],
+      },
+      {
+        title: "BBQ Meals",
+        items: [
+          { id: "5", name: "BBQ Chicken Meal", price: 449, description: "Assorted chicken grills with biryani rice and mint sauce", isVeg: false, rating: 4.8 },
+          { id: "6", name: "Veg BBQ Platter", price: 399, description: "Paneer, mushroom and potato grills with garlic bread", isVeg: true, rating: 4.6 },
+        ],
+      },
+    ],
+  },
+
+  // Paneer Palace
+  "RES113": {
+    name: "Paneer Palace",
+    cuisines: ["Paneer", "North Indian", "Veg", "Curry", "Roti"],
+    costForTwo: "₹300 for two",
+    avgRating: "4.3",
+    deliveryTime: "30-35 mins",
+    cloudinaryImageId: "RX_THUMBNAIL/IMAGES/VENDOR/2026/3/6/18a96461-eb80-4571-965f-68204437013f_622716.JPG",
+    categories: [
+      {
+        title: "Paneer Specialties",
+        items: [
+          { id: "1", name: "Paneer Butter Masala", price: 239, description: "Soft paneer cubes in rich buttery tomato gravy", isVeg: true, rating: 4.6 },
+          { id: "2", name: "Palak Paneer", price: 219, description: "Paneer cooked in a smooth spinach puree with garlic", isVeg: true, rating: 4.4 },
+          { id: "3", name: "Matar Paneer", price: 199, description: "Classic homestyle peas and paneer curry", isVeg: true, rating: 4.3 },
+          { id: "4", name: "Chilli Paneer (Dry)", price: 249, description: "Indo-Chinese style spicy tossed paneer cubes", isVeg: true, rating: 4.5 },
+        ],
+      },
+      {
+        title: "Breads",
+        items: [
+          { id: "5", name: "Tandoori Roti", price: 25, description: "Whole wheat bread baked in clay oven", isVeg: true, rating: 4.2 },
+          { id: "6", name: "Cheese Garlic Naan", price: 89, description: "Soft bread stuffed with cheese and topped with garlic", isVeg: true, rating: 4.7 },
+        ],
+      },
+      {
+        title: "Rice & Sides",
+        items: [
+          { id: "7", name: "Jeera Rice", price: 119, description: "Basmati rice tempered with cumin seeds", isVeg: true, rating: 4.3 },
+          { id: "8", name: "Boondi Raita", price: 79, description: "Yogurt mixed with crispy gram flour pearls and spices", isVeg: true, rating: 4.4 },
+        ],
+      },
+    ],
+  },
 };
 
 export default menuData;
