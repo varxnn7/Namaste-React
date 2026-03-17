@@ -32,7 +32,7 @@ const Header = () => {
               <span className="text-white text-xl">🍔</span>
             </div>
             <span className="text-white font-extrabold text-xl tracking-tight hidden sm:block">
-              Namaste<span className="text-orange-400">React</span>
+              Food<span className="text-orange-400">Steps</span>
             </span>
           </Link>
 
