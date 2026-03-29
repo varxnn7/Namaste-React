@@ -42,7 +42,7 @@ const About = () => {
             Our Story
           </span>
           <h1 className="text-4xl md:text-6xl font-black mb-4 leading-tight">
-            About <span className="text-orange-200">FoodieFlash</span>
+            About <span className="text-orange-200">Food Steps</span>
           </h1>
           <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
             We're on a mission to bring the best restaurant experiences directly
@@ -69,7 +69,7 @@ const About = () => {
           <h2 className="text-3xl font-black text-gray-800">
             Meet Our <span className="text-orange-500">Founder & CEO</span>
           </h2>
-          <p className="text-gray-400 mt-2">The visionary behind FoodieFlash</p>
+          <p className="text-gray-400 mt-2">The visionary behind Food Steps</p>
         </div>
 
         <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
@@ -80,7 +80,7 @@ const About = () => {
                 <div className="w-28 h-28 rounded-full bg-white/20 border-4 border-white/50 flex items-center justify-center mx-auto mb-4 text-5xl">
                   👤
                 </div>
-                <h3 className="text-2xl font-black">You</h3>
+                <h3 className="text-2xl font-black">Varun KUKREJA</h3>
                 <p className="text-orange-100 text-sm mt-1 font-semibold uppercase tracking-wide">
                   Founder & Chief Executive Officer
                 </p>
@@ -115,7 +115,7 @@ const About = () => {
               </div>
 
               <p className="text-gray-600 leading-relaxed mb-6">
-                A passionate entrepreneur and technologist, I founded FoodieFlash with one
+                A passionate entrepreneur and technologist, I founded Food Steps with one
                 simple belief — that everyone deserves access to amazing food, delivered fast
                 and fresh. With a deep love for food culture and a background in technology,
                 I set out to bridge the gap between great local restaurants and hungry
@@ -123,7 +123,7 @@ const About = () => {
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-8">
-                Under my leadership, FoodieFlash has grown from a small startup into a
+                Under my leadership, Food Steps has grown from a small startup into a
                 platform trusted by thousands of customers across multiple cities. I believe
                 in building technology that feels human, and food experiences that feel personal.
               </p>

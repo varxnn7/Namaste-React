@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Body from "./components/Body";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
+import Footer from "./components/Footer";
 import RestaurantMenu from "./components/RestaurantMenu";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { Provider } from "react-redux";
@@ -30,6 +31,7 @@ const AppLayout = () => {
       <div className="app">
         <Header />
         <Outlet />
+        <Footer />
       </div>
     </Provider>
   );

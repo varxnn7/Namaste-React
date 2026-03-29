@@ -16,11 +16,11 @@ const RestaurantCard = (props) => {
   const discount = aggregatedDiscountInfoV3;
 
   return (
-    <div className="m-3 w-[260px] rounded-2xl bg-white shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer">
+    <div className="w-[273px] flex flex-col gap-2 rounded-2xl bg-transparent transition-all duration-300 transform cursor-pointer group hover:scale-[0.98]">
       {/* Image with discount badge */}
-      <div className="relative">
+      <div className="relative w-full h-[182px] overflow-hidden rounded-2xl shadow-sm group-hover:shadow-md">
         <img
-          className="w-full h-[160px] object-cover"
+          className="w-full h-full object-cover"
           src={CDN_URL + cloudinaryImageId}
           alt={name}
           onError={(e) => {
@@ -30,48 +30,32 @@ const RestaurantCard = (props) => {
           }}
         />
         {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/80 to-transparent" />
+        
         {/* Discount badge */}
         {discount && (
-          <div className="absolute bottom-2 left-2 text-white">
-            <p className="text-xs font-black tracking-wide drop-shadow">
-              {discount.header}{" "}
-              {discount.subHeader && (
-                <span className="font-medium">{discount.subHeader}</span>
-              )}
-            </p>
+          <div className="absolute bottom-2 left-3 w-full">
+            <h3 className="text-[22px] font-extrabold text-[#ffffff] tracking-tighter shadow-sm leading-tight uppercase font-sans">
+              {discount.header} {discount.subHeader ? discount.subHeader : ""}
+            </h3>
           </div>
         )}
-        {/* Rating badge */}
-        <div
-          className={`absolute top-2 right-2 flex items-center gap-1 px-2 py-1 rounded-lg text-xs font-bold text-white shadow ${
-            avgRating >= 4.5
-              ? "bg-green-600"
-              : avgRating >= 4.0
-              ? "bg-green-500"
-              : "bg-orange-400"
-          }`}
-        >
-          <svg className="w-3 h-3 fill-white" viewBox="0 0 20 20">
-            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-          </svg>
-          {avgRating}
-        </div>
       </div>
 
       {/* Card Body */}
-      <div className="p-4">
-        <h3 className="font-bold text-gray-800 text-[15px] truncate">{name}</h3>
-        <p className="text-gray-400 text-xs mt-1 truncate">{cuisines.join(", ")}</p>
-        <div className="flex items-center justify-between mt-3 pt-3 border-t border-gray-100 text-xs text-gray-500">
-          <span className="flex items-center gap-1">
-            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            {sla.slaString}
-          </span>
-          <span className="font-medium text-gray-600">{costForTwo}</span>
+      <div className="px-3 flex flex-col gap-1 mt-1">
+        <h3 className="font-bold text-[18px] tracking-tight text-gray-900 dark:text-gray-100 truncate w-full">
+          {name}
+        </h3>
+        
+        <div className="flex items-center gap-1.5 text-[16px] font-bold text-gray-800 dark:text-gray-200">
+          <svg width="20" height="20" viewBox="0 0 20 20" role="img" aria-hidden="true" stroke="rgba(2, 6, 12, 0.92)" fill="rgba(2, 6, 12, 0.92)"><circle cx="10" cy="10" r="9" fill="url(#StoreRating20_svg__paint0_linear_32982_71567)"></circle><path d="M10.0816 12.865C10.0312 12.8353 9.96876 12.8353 9.91839 12.865L7.31647 14.3968C7.15344 14.4928 6.94723 14.3431 6.99593 14.1593L7.69755 11.4552C7.7121 11.3991 7.69315 11.3392 7.64998 11.2995L5.48514 9.30902C5.34907 9.18393 5.4246 8.94827 5.60226 8.93291L8.53039 8.67919C8.58784 8.67421 8.63853 8.63737 8.65874 8.58309L9.77114 5.58913C9.84089 5.40149 10.1591 5.40149 10.2289 5.58913L11.3413 8.58309C11.3615 8.63737 11.4122 8.67421 11.4696 8.67919L14.3977 8.93291C14.5754 8.94827 14.6509 9.18393 14.5149 9.30902L12.35 11.2995C12.3069 11.3392 12.2879 11.3991 12.3025 11.4552L13.0041 14.1593C13.0528 14.3431 12.8466 14.4928 12.6835 14.3968L10.0816 12.865Z" fill="white"></path><defs><linearGradient id="StoreRating20_svg__paint0_linear_32982_71567" x1="10" y1="1" x2="10" y2="19" gradientUnits="userSpaceOnUse"><stop stopColor="#21973B"></stop><stop offset="1" stopColor="#128540"></stop></linearGradient></defs></svg>
+          <span>{avgRating} • {sla.slaString}</span>
         </div>
+
+        <p className="text-[15px] text-gray-500 font-medium truncate pt-0.5">
+          {cuisines.join(", ")}
+        </p>
       </div>
     </div>
   );
